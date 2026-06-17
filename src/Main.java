@@ -1,9 +1,8 @@
+import menu.App;
 
-import javax.swing.*;
-import menu.MainMenu;
-
+/** Entry point: launch the single-window neon Pac-Man app on the EDT. */
 public class Main {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(MainMenu::new);
+        App.launch();
     }
 }
